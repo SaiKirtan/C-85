@@ -80,9 +80,9 @@ function up()
 	if(greencar_y >=0){
 
 		greencar_y = greencar_y - 10;
-		console.log("Up key has been pressed");
-		uploadBackground;
-		uploadgreencar;
+		console.log("When up arrow is pressed, x = " + greencar_x + " | y = " +greencar_y);
+		uploadBackground();
+		uploadgreencar();
 	}
 	//Define function to move the car upward
 }
@@ -90,12 +90,12 @@ function up()
 function down()
 {
 	
-	if(greencar_y >=400){
+	if(greencar_y <=350){
 
 		greencar_y = greencar_y + 10;
-		console.log("Down key has been pressed");
-		uploadBackground;
-		uploadgreencar;
+		console.log("When down arrow is pressed, x = " + greencar_x + " | y = " +greencar_y);
+		uploadBackground();
+		uploadgreencar();
 	}//Define function to move the car downward
 }
 
@@ -105,20 +105,20 @@ function left()
 	if(greencar_x >=0){
 
 		greencar_x = greencar_x - 10;
-		console.log("Left key has been pressed");
-		uploadBackground;
-		uploadgreencar;
+		console.log("When left arrow is pressed, x = " + greencar_x + " | y = " +greencar_y);		
+		uploadBackground();
+		uploadgreencar();
 	}//Define function to move the car left side
 }
 
 function right()
 {
 	
-	if(greencar_x >=800){
+	if(greencar_x <=750){
 
 		greencar_x = greencar_x + 10;
-		console.log("Right key has been pressed");
-		uploadBackground;
-		uploadgreencar;
+		console.log("When right arrow is pressed, x = " + greencar_x + " | y = " +greencar_y);
+		uploadBackground();
+		uploadgreencar();
 	}//Define function to move the car right side
 }
